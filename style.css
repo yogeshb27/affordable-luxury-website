@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #3e3e3e;
+    color: #f8d210; /* Soft gold for better contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background: url('https://source.unsplash.com/1600x900/?luxury,travel') no-repeat center/cover;
+    text-align: center;
+    padding: 120px 20px;
+    color: white;
+    position: relative;
+}
+
+/* Dark overlay to boost visibility */
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Slightly lighter than before */
+}
+
+/* Styling for better visibility */
+#hero h2 {
+    font-size: 3.5em; /* Larger for emphasis */
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif; /* Modern & readable */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    z-index: 1;
+}
+
+#hero p {
+    font-size: 1.7em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    max-width: 900px;
+    margin: 10px auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/* Sections */
+section {
+    padding: 50px;
+    background-color: #fdfdfd; /* Softer white for a premium feel */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3e3e3e;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
